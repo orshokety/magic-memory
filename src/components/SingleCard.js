@@ -1,9 +1,10 @@
 import "./SingleCard.css";
 
-function SingleCard({ card }) {
+function SingleCard({ card, handleChoice }) {
+  function handleClick() {
+    handleChoice(card);
+  }
 
-  function handleClick() {}
-  
   return (
     <div className="card">
       <div>
